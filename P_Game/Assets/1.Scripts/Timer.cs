@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class Timer : MonoBehaviour
 {
     public float LimitTime;
-    bool IsGameRun = true;
+    public bool IsGameRun = true;
  
     public Text timeText;
     public GameObject gameOverPop;
@@ -15,7 +15,6 @@ public class Timer : MonoBehaviour
     void Start()
     {
         LimitTime = 60f;
-
         StartCoroutine(TimeOverCheck());
     }
 

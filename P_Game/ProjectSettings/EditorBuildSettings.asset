@@ -11,9 +11,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/4,Scenes/Stage.unity
     guid: ce7ff034cac00ab4a94238dfdc263bc2
-  - enabled: 1
-    path: Assets/4,Scenes/PlayScene_JW.unity
-    guid: 1c048b98948e21a419063a548a7dfea3
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/4,Scenes/Battle1.unity
     guid: 2cda990e2423bbf4892e6590ba056729

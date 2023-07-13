@@ -1145,10 +1145,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d679251ea60509489f510dd35454598, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyPrefab: {fileID: 2370376294521718086, guid: b59bc9408bd004f4898f815e71c66b76, type: 3}
+  enemyPrefab: {fileID: 4443920624196963847, guid: 6218e0d608ca7c546b77163b09ed472d, type: 3}
+  StageClear: {fileID: 895856598}
   spawnDelay: 0.5
+  isGameClear: 1
   killCount: 0
-  stageClear: 3
 --- !u!4 &413547378
 Transform:
   m_ObjectHideFlags: 0
@@ -2754,6 +2755,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LimitTime: 10
+  IsGameRun: 1
   timeText: {fileID: 1803305160}
   gameOverPop: {fileID: 0}
 --- !u!4 &999079198
@@ -2788,6 +2790,10 @@ MonoBehaviour:
   StageClear: {fileID: 895856598}
   StageUnClear: {fileID: 1392788909}
   ShopBG: {fileID: 39906371}
+  ChestBtn: []
+  Chest: []
+  RewardBG: {fileID: 0}
+  RewardsCloseBtn: {fileID: 0}
 --- !u!114 &999079200
 MonoBehaviour:
   m_ObjectHideFlags: 0

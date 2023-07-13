@@ -11,7 +11,7 @@ public class EnemySpawner : MonoBehaviour
     public GameObject StageClear;   // 게임 클리어 팝업입니다.
     public float spawnDelay = 0.5f;   // 스폰 딜레이
 
-    bool isGameClear = true;        // 게임 클리어 여부를 체크합니다. (true = 클리어x, false = 클리어)
+    public bool isGameClear = false;        // 게임 클리어 여부를 체크합니다. (true = 클리어, false = 클리어x)
     public int killCount = 0;              // 잡은 적의 마릿수를 체크합니다.
     int stageClear = 3;             // 잡아야하는 적의 마릿수를 나타냅니다.
 
@@ -38,7 +38,7 @@ public class EnemySpawner : MonoBehaviour
             // 잡은 적의 마릿수가 잡아야하는 적의 마릿수와 같다면 isGameOver를 false로 만들어줍니다.
             if (killCount == stageClear)
             {
-                isGameClear = false;
+                isGameClear = true;
                 StageClear.SetActive(true);
 
                 Time.timeScale = 0;
