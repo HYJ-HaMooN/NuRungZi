@@ -22,8 +22,8 @@ public class ButtonManager : MonoBehaviour
 
     public ButtonManager(GameObject gameObject)
     {
-    }
 
+    }
 
     private void Start()
     {
@@ -36,13 +36,11 @@ public class ButtonManager : MonoBehaviour
         Chest[0].SetActive(false);
         Chest[1].SetActive(false);
         Chest[2].SetActive(false);
-
     }
 
     public void StartBtn()
     {
         Time.timeScale = 1;
-
         SceneManager.LoadScene(1);
     }
 
@@ -92,9 +90,7 @@ public class ButtonManager : MonoBehaviour
 
     public void CloseBtn()
     {
-        Time.timeScale = 1;
-
-        
+        Time.timeScale = 1;    
         OptionBG.SetActive(false);
         MenuBG.SetActive(false);
         EquipBG.SetActive(false);
@@ -102,14 +98,12 @@ public class ButtonManager : MonoBehaviour
         StageClear.SetActive(false);
         StageUnClear.SetActive(false);
     }
-
-
     public void ChestOpen()
     {
-            Chest[0].SetActive(true);
-            ChestBtn[0].SetActive(false);
-            ChestBtn[1].SetActive(false);
-            ChestBtn[2].SetActive(false);
+        Chest[0].SetActive(true);
+        ChestBtn[0].SetActive(false);
+        ChestBtn[1].SetActive(false);
+        ChestBtn[2].SetActive(false);
     }
     public void ChestOpen1()
     {
@@ -125,12 +119,8 @@ public class ButtonManager : MonoBehaviour
         ChestBtn[1].SetActive(false);
         ChestBtn[2].SetActive(false);
     }
-
     public void RewardsClose()
     {
         RewardBG.SetActive(false);
     }
-
-
-
 }

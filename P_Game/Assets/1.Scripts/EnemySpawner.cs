@@ -13,7 +13,7 @@ public class EnemySpawner : MonoBehaviour
 
     public bool isGameClear = false;        // 게임 클리어 여부를 체크합니다. (true = 클리어, false = 클리어x)
     public int killCount = 0;              // 잡은 적의 마릿수를 체크합니다.
-    int stageClear = 3;             // 잡아야하는 적의 마릿수를 나타냅니다.
+    int stageClear = 4;             // 잡아야하는 적의 마릿수를 나타냅니다.
 
     private void Start() { StartCoroutine(SpawnEnemy()); }
     private IEnumerator SpawnEnemy()
@@ -39,9 +39,7 @@ public class EnemySpawner : MonoBehaviour
             if (killCount == stageClear)
             {
                 isGameClear = true;
-                StageClear.SetActive(true);
-
-                Time.timeScale = 0;
+                StageClear.SetActive(true); //클리어시보상 -> 보물상자씬이 열림          
             }
         }
     }

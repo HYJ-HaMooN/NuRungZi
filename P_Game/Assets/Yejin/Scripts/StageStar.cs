@@ -6,7 +6,6 @@ using UnityEngine.UI;
 public class StageStar : MonoBehaviour
 {
     public GameObject StarZero, StarOne, StarTwo, StarThree;
-    public int Stage; //스테이지 구분
     bool GameClear, GameOver, GameEnd; //게임상태
     float remainTime; //GameEnd시 저장될 시간
 
@@ -21,14 +20,14 @@ public class StageStar : MonoBehaviour
     {
         if (GameClear == true && GameEnd == false) //게임클리어시 즉시 시간정보를 가져옴
         {
-            remainTime = GetComponent<Timer>().LimitTime; //게임클리어 순간의 시간 저장
+            remainTime = Timer.LimitTime; //게임클리어 순간의 시간 저장
 
-            // 10초 이상 클리어 시 별이 3개 이미지 활성화
+            // 10초 이상 클리어 시 별이 3개 활성화
             if (remainTime >= 10) { StarThree.SetActive(true); }
             // 5초 이상 클리어 시 별이 2개
-            else if (remainTime >= 5) { StarTwo.SetActive(true); }
+            if (remainTime >= 5) { StarTwo.SetActive(true); }
             // 0초 이상 클리어 시 별이 1개
-            else if (remainTime >= 0) { StarOne.SetActive(true); }
+            if (remainTime >= 0) { StarOne.SetActive(true); }
             //게임 끝!
             GameEnd = true;
         }

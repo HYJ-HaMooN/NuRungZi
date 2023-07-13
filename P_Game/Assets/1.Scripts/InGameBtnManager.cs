@@ -37,32 +37,16 @@ public class InGameBtnManager : MonoBehaviour
     {
         if (!isPause)
         {
-            if (maxAttackCount == 1)
+            atkCount.text = maxAttackCount.ToString(); //UI적 표시
+            maxAttackCount--; // (1) 0... 버튼을 누르는 횟수만큼 감소
+
+            if (maxAttackCount == 0) //만약 카운트가 ( 1 -> 0 ) 에 다다르면
             {
-                numOfCount++;
-
-                maxAttackCount += numOfCount;
-
-                // 플레이어가 공격할 시 Bullet 프리팹을 생성합니다.
-                playerInfo.Attack();
+                numOfCount++; // (1) 2 3 4.. 공격을 위해 버튼을 눌러야 하는 횟수 증가
+                maxAttackCount += numOfCount; // 다음 총공격 횟수를 저장
+                playerInfo.Attack(); // bullet발사      
             }
-
-            maxAttackCount--;
-
-            atkCount.text = maxAttackCount.ToString();
         }
-
-
-
-        //atkCount.text = maxAttackCount.ToString(); //UI적 표시
-        //maxAttackCount--; // (1) 0... 버튼을 누르는 횟수만큼 감소
-
-        //if (maxAttackCount == 0) //만약 카운트가 ( 1 -> 0 ) 에 다다르면
-        //{
-        //    numOfCount++; // (1) 2 3 4.. 공격을 위해 버튼을 눌러야 하는 횟수 증가
-        //    maxAttackCount += numOfCount; // 다음 총공격 횟수를 저장
-        //    playerInfo.Attack(); // bullet발사      
-        //}
     }
 
     // 공격횟수를 1로 초기화 시키는 버튼에 관련된 코드입니다.

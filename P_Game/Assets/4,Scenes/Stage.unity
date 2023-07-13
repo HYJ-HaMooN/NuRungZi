@@ -495,11 +495,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e73259b9b4653604ba24aca39e77824d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StarZero: {fileID: 0}
+  StarZero: {fileID: 1787586181}
   StarOne: {fileID: 787597497}
   StarTwo: {fileID: 32435347}
   StarThree: {fileID: 691272153}
-  Stage: 0
 --- !u!1 &105787498
 GameObject:
   m_ObjectHideFlags: 0
@@ -971,7 +970,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &274412282
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1254,7 +1253,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &324422927
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1466,7 +1465,6 @@ MonoBehaviour:
   StarOne: {fileID: 164165977}
   StarTwo: {fileID: 1207341522}
   StarThree: {fileID: 1757120660}
-  Stage: 0
 --- !u!1 &373352019
 GameObject:
   m_ObjectHideFlags: 0
@@ -1484,7 +1482,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &373352020
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2050,11 +2048,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e73259b9b4653604ba24aca39e77824d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StarZero: {fileID: 0}
+  StarZero: {fileID: 274412281}
   StarOne: {fileID: 373352019}
   StarTwo: {fileID: 324422926}
   StarThree: {fileID: 47250516}
-  Stage: 0
 --- !u!1 &691272153
 GameObject:
   m_ObjectHideFlags: 0

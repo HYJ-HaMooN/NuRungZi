@@ -12,11 +12,7 @@ public class Enemy : MonoBehaviour
     
     int killCount;
 
-    private void Start()
-    {
-        curHp = maxHp;
-    }
-
+    private void Start() { curHp = maxHp; }
     public void OnEnable() { curHp = maxHp; } //적의 체력 초기화
     private void Update()
     {
